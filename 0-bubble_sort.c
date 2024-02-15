@@ -11,5 +11,27 @@
 */
 void bubble_sort(int *array, size_t size)
 {
-	/* TODO */
+	int swap_was_made, i, j, current, neighbour;
+
+	for (i = 0; i < size; i++)
+	{
+		swap_was_made = 0;
+		for (j = 0; j < (size - 1) - i; j++)  /* comparisons */
+		{
+			current = array[j];
+			neighbour = array[j + 1];
+
+			/* swap if number is greater than its neighbor */
+			if (current > neighbour)
+			{
+				array[j] = neighbour;
+				array[j + 1] = current;
+				swap_was_made = 1; /* record this swap */
+				print_array(array, size);
+			}
+		}
+
+		if (!swap_was_made) /* Everything is already sorted */
+			break;
+	}
 }
