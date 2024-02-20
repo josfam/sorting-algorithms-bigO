@@ -39,4 +39,7 @@ void selection_sort(int *array, size_t size);
 /* Quick sort algorithm */
 void quick_sort(int *array, size_t size);
 
+/* Returns the length of a linked list */
+int get_list_size(listint_t **list);
+
 #endif
