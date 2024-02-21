@@ -11,6 +11,7 @@ int get_list_size(listint_t **list)
 	int size;
 	listint_t *current;
 
+	current = *list;
 	size = 0;
 	if (list == NULL)
 		return (0);
