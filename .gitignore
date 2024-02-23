@@ -53,3 +53,9 @@ dkms.conf
 
 # Editors
 /.vscode
+
+# diagramming/whiteboarding
+*drawio*
+
+# tests
+/tests/*

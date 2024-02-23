@@ -42,4 +42,7 @@ void quick_sort(int *array, size_t size);
 /* Returns the length of a linked list */
 int get_list_size(listint_t **list);
 
+/* Swaps two nodes in a linked list */
+int swap_nodes(listint_t *left, listint_t *right, listint_t **list);
+
 #endif
