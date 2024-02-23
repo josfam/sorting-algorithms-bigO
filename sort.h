@@ -31,14 +31,6 @@ void bubble_sort(int *array, size_t size);
 /* Insertion sort algorithm */
 void insertion_sort_list(listint_t **list);
 
-/*Sorts an array of integers in ascending order using the*/
-/* Selection sort algorithm */
-void selection_sort(int *array, size_t size);
-
-/* Sorts an array of integers in ascending order using the  */
-/* Quick sort algorithm */
-void quick_sort(int *array, size_t size);
-
 /* Returns the length of a linked list */
 int get_list_size(listint_t **list);
 
