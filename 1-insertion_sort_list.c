@@ -35,8 +35,9 @@ void insertion_sort_list(listint_t **list)
 				temp = current;
 				swap_nodes(left_node, temp, list);
 				/* fix pointers that moved after nodes were swapped */
-				print_list(*list);
 				left_node = temp->prev;
+				print_list(*list); /* print after every swap */
+
 				if (left_node == NULL) /* no more swaps are needed */
 					break;
 			}
