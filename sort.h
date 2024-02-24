@@ -37,4 +37,8 @@ int get_list_size(listint_t **list);
 /* Swaps two nodes in a linked list */
 int swap_nodes(listint_t *left, listint_t *right, listint_t **list);
 
+/* Sorts an array of integers in ascending order using the */
+/* selection sort algorithm */
+void selection_sort(int *array, size_t size);
+
 #endif
