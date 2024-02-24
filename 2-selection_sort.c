@@ -18,27 +18,29 @@ void selection_sort(int *array, size_t size)
 	{
 		;
 	}
-
-	for (i = 0; i < size - 1; i++)
+	else
 	{
-		min = array[i];
-		min_index = i;
-		for (j = i + 1; j < size; j++)
+		for (i = 0; i < size - 1; i++)
 		{
-			other = array[j];
-			if (other < min)
+			min = array[i];
+			min_index = i;
+			for (j = i + 1; j < size; j++)
 			{
-				min = other;
-				min_index = j;
+				other = array[j];
+				if (other < min)
+				{
+					min = other;
+					min_index = j;
+				}
 			}
-		}
-		/* Do a swap if a more minimum value was found */
-		if (min_index != i)
-		{
-			temp = array[i];
-			array[i] = min;
-			array[min_index] = temp;
-			print_array(array, size);
+			/* Do a swap if a more minimum value was found */
+			if (min_index != i)
+			{
+				temp = array[i];
+				array[i] = min;
+				array[min_index] = temp;
+				print_array(array, size);
+			}
 		}
 	}
 }
