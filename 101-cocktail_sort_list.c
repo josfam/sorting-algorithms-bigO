@@ -50,7 +50,7 @@ int get_list_size(listint_t **list)
 	listint_t *current;
 
 	if (list == NULL)
-		return 0;
+		return (0);
 
 	current = *list;
 	size = 0;
