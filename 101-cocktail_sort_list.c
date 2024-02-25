@@ -16,7 +16,7 @@ void cocktail_sort_list(listint_t **list)
 
 	list_size = get_list_size(list);
 
-	if (list == NULL || list_size == 1) /* Do nothing */
+	if (list == NULL || list_size <= 1) /* Do nothing */
 	{
 		;
 	}
@@ -48,6 +48,9 @@ int get_list_size(listint_t **list)
 {
 	int size;
 	listint_t *current;
+
+	if (list == NULL)
+		return 0;
 
 	current = *list;
 	size = 0;
