@@ -37,8 +37,24 @@ int get_list_size(listint_t **list);
 /* Swaps two nodes in a linked list */
 int swap_nodes(listint_t *left, listint_t *right, listint_t **list);
 
+/* Swaps two nodes in a linked list, while considering the tail too */
+int swap_nodes_cocktail(listint_t *left, listint_t *right, listint_t **head,
+				listint_t **tail);
+
+/* Moves backwards through the linked list, and swaps elements */
+/* using the bubble sort algorithm */
+int swap_backwards(listint_t **head, listint_t **tail);
+
+/* Moves forward through in the linked list, and swaps elements */
+/* using the bubble sort algorithm */
+int swap_forwards(listint_t **head, listint_t **tail);
+
 /* Sorts an array of integers in ascending order using the */
 /* selection sort algorithm */
 void selection_sort(int *array, size_t size);
+
+/* Sorts a doubly linked list of integers in ascending order using the */
+/* Cocktail shaker sort algorithm */
+void cocktail_sort_list(listint_t **list);
 
 #endif
