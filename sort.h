@@ -2,6 +2,7 @@
 #define SORT_HEADER
 
 # include <stddef.h>
+# include <stddef.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -56,5 +57,17 @@ void selection_sort(int *array, size_t size);
 /* Sorts a doubly linked list of integers in ascending order using the */
 /* Cocktail shaker sort algorithm */
 void cocktail_sort_list(listint_t **list);
+
+/* Sorts an array of integers in ascending order using */
+/* the counting sort algorithm */
+void counting_sort(int *array, size_t size);
+
+/* Returns a zero-initialized array to be used for counting elements */
+/* while sorting */
+int *get_count_array(int k);
+
+/* Sorts, in-place, the numbers in the unsorted array, */
+/* using positions dictated by the a positions array */
+void sort_with_positions(int **unsorted, size_t size, int **positions);
 
 #endif
